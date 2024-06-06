@@ -51,7 +51,8 @@
             cargo-watch
             rust-analyzer
 
-            ccls
+            corrosion
+
             clang-tools
             cmake
             codespell
