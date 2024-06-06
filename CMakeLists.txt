@@ -19,6 +19,8 @@ add_definitions(-DPROJECT_NAME="${PROJECT_NAME}")
 include_directories(include/)
 add_subdirectory(src)
 
+add_dependencies(${PROJECT_NAME}Pass ${PROJECT_NAME}-rs)
+
 target_link_libraries(${PROJECT_NAME}Pass
     PUBLIC
-    ${PROJECT_NAME}_rs)
+    ${PROJECT_NAME}-rs)
