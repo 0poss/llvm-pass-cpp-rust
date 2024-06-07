@@ -1,5 +1,5 @@
 {
-  description = "Dev env for developping LLVM passes in Rust and C++";
+  description = "Dev env for developping LLVM passes in C++ and Rust";
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
@@ -36,6 +36,7 @@
     {
       templates.default = {
         path = ./.;
+        description = "A template LLVM pass in C++ and Rust";
       };
 
       devShells = forEachSupportedSystem ({ pkgs }: {
