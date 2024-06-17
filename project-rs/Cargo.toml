@@ -7,6 +7,8 @@ edition = "2021"
 
 [dependencies]
 inkwell = { version = "0.4.0", features = ["llvm17-0"] }
+# https://github.com/lizhuohua/rust-ffi-checker/issues/1#issuecomment-1286469596
+llvm-sys = { version = "*", features = ["no-llvm-linking"] }
 
 [build-dependencies]
 cbindgen = "0.26.0"
